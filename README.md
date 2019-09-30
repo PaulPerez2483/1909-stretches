@@ -65,7 +65,7 @@ $ jest --watch forEach
 We're using the Jest library to run tests for us. Check out the docs [here](https://jestjs.io/docs).
 
 # Node
-You can also run the file you are working on in it's entirety by using Node. Be sure to call your function with an input and use some `console log`s otherwise this might not be helpful:
+You can also run the file you are working on in its entirety by using Node. Be sure to call your function with an input and use some `console log`s otherwise this might not be helpful:
 
 ```
 $ node isEqual.js
