@@ -17,8 +17,12 @@ returns { a: 1, c: 42};
 */
 
 function pluck(obj, elements) {
+  console.log(obj, elements);
   const newObj = {};
   elements.forEach(el => {
+    console.log(el)
+    console.log(obj[el]);
+    console.log(newObj[el])
     if (obj[el] !== undefined) newObj[el] = obj[el];
     console.log(newObj)
   });
