@@ -9,10 +9,13 @@ zip([
 
 function zip(objs) {
   // console.log(objs)
-for(let key in objs) {
-  console.log(objs[key])
-  console.log(isEmpty(objs[key]))
+return objs.reduce((current, accum) => {
+  for(let key in current) {
+    if(key in accum) {
+      console.log(accum[key] += current[key]);
+    }
   }
+})
 }
 
 module.exports = { zip };
