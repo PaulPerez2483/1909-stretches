@@ -2,20 +2,30 @@
 // Return a boolean
 
 const checkAnagrams = (str1, str2) => {
-  console.log(str1, str2)
-  let reverseString = '';
-
-  if(str1.length !== str2.length) {
-    return false
-  };
-
-  for(let i = str2.length-1; i >= 0; i--) {
-     reverseString += str2[i];
-  }
-  if(str1 === reverseString) {
-    return true
-  }
- 
+  return str1
+  .toLowerCase()
+  .split("")
+  .sort()
+  .join("") === str2
+  .toLowerCase()
+  .split("")
+  .sort()
+  .join("")
 };
+
+/* 
+  console.log(str1.split('').sort().join(''))
+  console.log(str2.split('').sort().join(''))
+  return str1
+  .toLowerCase()
+  .split("") returns an array ['d', 'o', 'g'];
+  .sort() sorts the array ['d','g','o'];
+  .join("") returns an array === str2
+  .toLowerCase()
+  .split("")
+  .sort()
+  .join("")
+};
+*/
 
 module.exports = { checkAnagrams };
