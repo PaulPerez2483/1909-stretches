@@ -13,6 +13,11 @@ const checkAnagrams = (str1, str2) => {
   .join("")
 };
 
+
+
+
+
+
 /* 
   console.log(str1.split('').sort().join(''))
   console.log(str2.split('').sort().join(''))

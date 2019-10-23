@@ -2,3 +2,4 @@
 notes : 
 
 if(str.length !== str.length) return false
+split('').sort().join() -- 
