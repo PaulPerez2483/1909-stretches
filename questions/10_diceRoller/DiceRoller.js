@@ -3,7 +3,16 @@
 // history property which outputs all of the previous rolls
 
 class DiceRoller {
-  //YOUR CODE
+  constructor(a,b) {
+    this.numOne = a;
+    this.numTwo = b;
+    this.history = [];
+  }
+  roll(){
+    
+  }
+
 }
+
 
 module.exports = { DiceRoller };
