@@ -4,12 +4,15 @@
 
 class DiceRoller {
   constructor(a,b) {
-    this.numOne = a;
-    this.numTwo = b;
-    this.history = [];
+    if(!a || !b) {
+      throw new Error('Error, missing')
+    }
+    this.a = a;
+    this.b = b;
+    this.history
   }
   roll(){
-    
+    const allRolls = []
   }
 
 }

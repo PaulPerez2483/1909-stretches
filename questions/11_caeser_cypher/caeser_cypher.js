@@ -17,7 +17,7 @@
 // result = "csps123"
 
 const encryptString = (str, shift) => {
-  // YOUR CODE
+  console.log(str, shift)
 };
 
 module.exports = { encryptString };
